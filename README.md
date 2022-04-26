@@ -1,20 +1,19 @@
-# Tremor_detection
-A work flow to download data, get envelope, calculate envelope cross-correlation, and detect tremors from the ocean bottom seismic data in Alaska.
+# An automatic envelope cross-correlation tremor detection method
+A work flow to process data, get envelope, calculate envelope cross-correlation, and detect tremors from the ocean bottom seismic data in Alaska.
 
-The detailed can be find in the paper soon. 
-
-The basic idea refer the papers below.
+The detailed can be find in the paper soon. The basic idea refers the papers below.
 
 One tremor example detected by my method.
 <center><img src=Fig_S1.png width="700" height="700"/></center>
 
 ### Step1. 1_E_3min_write_loop_save_file.ipynb
+Obtain seismic data, 2-8 Hz bandpass filter, get envelope (Obspy), low pass filter to 0.2 Hz, downsample to 1 Hz, save data 
 
-## Step2. 2_EN_hflf_reload_data_cross_correlation.ipynb
+### Step2. 2_EN_hflf_reload_data_cross_correlation.ipynb
 
-## step3. 3_calculate_tremor_hierarchy_2.ipynb
+### step3. 3_calculate_tremor_hierarchy_2.ipynb
 
-## Step4. 4_plot_figure_4paper.ipynb
+### Step4. 4_plot_figure_4paper.ipynb
 
 References:
 
