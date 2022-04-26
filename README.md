@@ -10,10 +10,14 @@ One tremor example detected by my method.
 Obtain seismic data, 2-8 Hz bandpass filter, get envelope (Obspy), low pass filter to 0.2 Hz, downsample to 1 Hz, save data 
 
 ### Step2. 2_EN_hflf_reload_data_cross_correlation.ipynb
+Envelop cross-correlate in low (2-8 Hz) and high (10-16 Hz) frequency bands, and reference stations
 
 ### step3. 3_calculate_tremor_hierarchy_2.ipynb
+using the hierachical cluster method find the most correlated station pairs.
+The tremor is located if the cross-correlation is over 0.68 for more than 3 station pairs, but the time window is skipped if the cross-correlation is over 0.65 for at least 6 stations in 10-16 Hz to minimize the local earthquake detections. Besides, when the reference station cross-correlation is over 0.65 for at three four station pairs, that time window is discarded. The detection time window is skipped if it includes the earthueks in catalogs.
 
 ### Step4. 4_plot_figure_4paper.ipynb
+Plot low, high frequency and hydrophone data
 
 References:
 
